@@ -1,0 +1,142 @@
+.main-section {
+  display: flex;
+  justify-content: center;
+  margin: 2px;
+  position: relative;
+}
+.chess-board {
+  display: flex;
+  justify-content: center;
+}
+.box {
+  height: 70px;
+  width: 70px;
+  border: 1.5px solid black;
+  text-align: center;
+  overflow: hidden;
+}
+.black-boxes {
+  background-color: rgb(130, 112, 54);
+}
+.white-boxes {
+  background-color: white;
+}
+.pieces {
+  width: 60px;
+}
+.moves-section {
+  margin-top: 50px;
+  width: 40%;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+.moves-section ul {
+  margin-top: 10px;
+  overflow-wrap: break-word;
+}
+.moves-section ul li {
+  width: 285px;
+}
+.col-numbering,
+.row-numbering {
+  color: rgb(212, 46, 46);
+  font-size: 20px;
+  font-weight: bold;
+}
+.col-numbering {
+  text-align: center;
+}
+.row-numbering {
+  width: 30px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+}
+.numbering-section {
+  margin-top: 55px;
+  position: absolute;
+  top: 0;
+  left: 40px;
+}
+.highlight-move {
+  background-color: rgba(192, 255, 3, 0.551);
+}
+.highlight-enemy {
+  background-color: rgba(255, 3, 3, 0.551);
+}
+.killed-scroll-section {
+  margin: 10px 50px;
+  width: 70px;
+  position: relative;
+  border: 3px solid rgb(130, 112, 54);
+  overflow: hidden;
+}
+.killed-pieces-section {
+  width: 85px;
+  height: 560px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.killed-pieces {
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin: 0;
+}
+.white-king,
+.white-queen,
+.white-bishop,
+.white-rook,
+.white-knight,
+.white-pawn,
+.black-king,
+.black-queen,
+.black-bishop,
+.black-rook,
+.black-knight,
+.black-pawn {
+  background-image: url("./images/chess-sprite-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 130px;
+  width: 70px;
+}
+.white-king {
+  background-position: 7px 5px;
+}
+.white-queen {
+  background-position: -64px 7px;
+}
+.white-bishop {
+  background-position: -136px 7px;
+}
+.white-knight {
+  background-position: -208px 7px;
+}
+.white-rook {
+  background-position: -279px 7px;
+}
+.white-pawn {
+  background-position: -350px 7px;
+}
+.black-king {
+  background-position: 7px -65px;
+}
+.black-queen {
+  background-position: -64px -65px;
+}
+.black-bishop {
+  background-position: -136px -65px;
+}
+.black-knight {
+  background-position: -208px -65px;
+}
+.black-rook {
+  background-position: -279px -65px;
+}
+.black-pawn {
+  background-position: -350px -65px;
+}
